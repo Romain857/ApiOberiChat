@@ -14,7 +14,7 @@ app.use(
 )
 
 app.get('/', (request, response) => {
-    response.json({ info: 'Node.js, Express, and Postgres API' })
+    response.json({ info: 'API Node et Express JS / BDD PostgreSQL' })
 })
 
 //Personnes
@@ -38,14 +38,6 @@ app.post('/post', p.createPost)
 app.put('/post/:id', p.updatePost)
 app.delete('/post/:id', p.deletePost)
 
-// var Capitalize = function (){
-//     const laString = "azerty"
-//     console.log(laString)
-//     ls = laString.toUpperCase()
-//     console.log(ls)
-// }
-
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
-    // Capitalize()
 })
