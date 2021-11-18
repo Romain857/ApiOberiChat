@@ -38,6 +38,14 @@ app.post('/post', p.createPost)
 app.put('/post/:id', p.updatePost)
 app.delete('/post/:id', p.deletePost)
 
+// var Capitalize = function (){
+//     const laString = "azerty"
+//     console.log(laString)
+//     ls = laString.toUpperCase()
+//     console.log(ls)
+// }
+
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
+    // Capitalize()
 })
